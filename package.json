@@ -1,0 +1,41 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Server for the Answering your dumb questions website",
+  "main": "index.js",
+  "scripts": {
+    "start": "./node_modules/nodemon/bin/nodemon.js src/app.js --exec 'npm run lint && node'",
+    "lint": "eslint \"./**/*.js\" ",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/joi": "^15.0.3",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "joi": "^17.4.0",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.7",
+    "sequelize": "^6.6.2",
+    "sqlite3": "^5.0.2"
+  },
+  "devDependencies": {
+    "eslint": "^7.28.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.0",
+    "eslint-plugin-vue": "^7.10.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kaavya12/answering-your-dumb-questions-server.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Kaavya12/answering-your-dumb-questions-server/issues"
+  },
+  "homepage": "https://github.com/Kaavya12/answering-your-dumb-questions-server#readme"
+}
