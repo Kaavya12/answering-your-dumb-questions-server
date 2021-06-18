@@ -5,9 +5,9 @@ module.exports = {
     user: process.env.DB_USER || 'tabtracker',
     password: process.env.DB_PASS || 'tabtracker',
     options: {
-      dialect: process.env.DIALECT || 'sqlite',
-      host: process.env.HOST || 'localhost',
-      storage: './aydq-data.sqlite'
+      dialect: process.env.DIALECT || 'postgres',
+      host: process.env.PSQL_HOST || 'localhost',
+      logging: false
     }
   }
 }
